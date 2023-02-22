@@ -80,6 +80,7 @@
     } else if(userGuess == randomNumber) { //Se corrigio la variable ATTEMPS por randomNumber
       lastResult.textContent = 'Felicitaciones! adivinaste el número!';
       lastResult.style.backgroundColor = 'green'; //Se corrigio el color 
+      lowOrHi.textContent = ''; //Se borra el texto del número mayor o menor
       setGameOver();
     } else {
       lastResult.textContent = 'Incorrecto! ';
